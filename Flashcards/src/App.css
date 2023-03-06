@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: black;
+
+}
+.card{
+  width: 800px;
+  height: 400px;
+  background-color: rgba(76, 175, 80, 0.3)
+  
+}
+.card h2{
+  padding-top: 120px;
+}
+.card:active {
+animation: flip 1.5s 1 ease-in-out;
+border-color: #646cff;
+
+}
+@keyframes flip{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
