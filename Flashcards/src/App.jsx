@@ -9,22 +9,67 @@ import React,{ useState } from 'react';
 
 function App () {
   const [flashcards,setFlashcards]=useState(SAMPLE_FLASKCARS)
-
+  const[answer,setAnswer]=useState()
+  const[answer2,setAnswer2]=useState()
   const[id,setId]=useState(1)
   const nextpass=()=>{
     
-    {setId((id+1)%10)}
+    {setId((id+1)%10)
+      setAnswer('');
+    }
+    
 
     
   }
+  const frontpass=()=>{
+    
+    {if(id-1<0){setId(9)}
+      else{setId((id-1)%10)}
+      setAnswer('');
+    }
+    
+
+    
+  }
+  const[score,setScore]=useState(0);
+  const change=(e)=>{
+setAnswer(e.target.value)
+  }
+  const submit=(e)=>{
+setAnswer2(answer)
+
+for(var i=0;i<SAMPLE_FLASKCARS.length;i++){
+
+  if(answer2==SAMPLE_FLASKCARS[id].Answer)
+ { e.target.className="cor"
+setScore(score+1)
+
+nextpass()}
+else{
+  e.target.className="wro"
+nextpass()
+}
+
+}
+
+
+  }
+  const click=()=>{
+    alert(click);
+  }
+ 
   return (
     <div className="App">
     
      <h1>NEW YORK DMV PRACTICE TEST</h1>
      <h2>This is a practice test for NEW YROK DMV </h2>
     <p>Number of cards: 10</p>
+    <p>Current Streak:{score}, Longest Streak: 0</p>
  
     <Form flashcards={flashcards} id={id} />
+    <textarea name="answer" id="" cols="20" rows="1" onChange={change} value={answer}></textarea>
+    <button onClick={submit}> submit</button>
+    <button onClick={frontpass}>before</button>
    <button onClick={nextpass}>next</button>
  </div>
 
@@ -36,6 +81,12 @@ function App () {
     question:'One broken line indicates:',
     Answer:'You can pass other vehicles or change lanes if you can do so safely without interfering with traffic.'
 
+  },
+  {
+    id:1,
+    question:'What does this sign mean?',
+    Answer:'high way starts ahead'
+  
   },
  {
   id:2,
@@ -84,13 +135,8 @@ function App () {
   question:'for an emergency vehicle using flashing lights, a siren, or an air horn that is approaching you from either direction you should:',
   Answer:'Pull over to right and stop'
 
-},
-{
-  id:1,
-  question:'What does this sign mean?',
-  Answer:'high way starts ahead'
-
 }
+
 
 ]
 
