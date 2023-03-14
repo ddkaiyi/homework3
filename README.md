@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://s27.aconvert.com/convert/p3r68-cdx67/erjpu-knv2j.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/ddkaiyi/homework3/blob/master/z6w9q-4rkls.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
