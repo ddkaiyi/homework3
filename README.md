@@ -1,4 +1,4 @@
-# WEB102 Prework - *Flashcard*
+# WEB102 Homework3 - *Flashcard*
 
 Submitted by: **Kaiyi Dai**
 
@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://github.com/ddkaiyi/homework3/blob/master/z6w9q-4rkls.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/ddkaiyi/homework3/blob/master/zo6dv-ovcic.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
